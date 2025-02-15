@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon bug related to the use of innerHTML in HTML.  Improperly using innerHTML with user-supplied data can lead to cross-site scripting (XSS) vulnerabilities. The bug showcases how injecting script tags via innerHTML can execute unexpected code. The solution provides a safer alternative using DOM manipulation methods.
