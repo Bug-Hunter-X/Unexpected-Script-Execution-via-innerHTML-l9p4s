@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Incorrect usage of innerHTML leading to unexpected behavior
+    document.getElementById("myDiv").innerHTML = "<p>This text replaces the div content, but...</p>" + "<script>alert('This script is executed!');</script>";
+  </script>
+</body>
+</html>
